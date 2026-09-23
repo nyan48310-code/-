@@ -99,7 +99,7 @@ body {
 .hero-lead {
     color: var(--text-muted);
     font-size: 1rem;
-    max-width: 600px;
+    max-width: 650px;
     font-weight: 300;
 }
 
@@ -136,8 +136,22 @@ body {
     font-size: 1.05rem;
 }
 
+.profile-name {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.profile-affiliation {
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
 .about-text p + p {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 /* Skills Grid */
@@ -238,16 +252,16 @@ body {
 
 .work-link {
     display: inline-block;
-    color: var(--text-main);
+    color: var(--accent);
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .work-link:hover {
-    color: var(--accent);
+    opacity: 0.8;
 }
 
 /* Contact Section */
