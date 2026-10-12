@@ -25,6 +25,7 @@ body {
     font-family: var(--font-base);
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden; /* スマホでの予期せぬ横スクロールを完全に防止 */
 }
 
 .container {
@@ -58,16 +59,20 @@ body {
     color: var(--text-main);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .nav-links a {
     color: var(--text-muted);
     text-decoration: none;
     font-size: 0.75rem;
-    letter-spacing: 1.5px;
-    margin-left: 2rem;
+    letter-spacing: 1px;
     transition: color 0.2s ease;
 }
 
@@ -89,11 +94,12 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
     font-weight: 700;
     line-height: 1.35;
     letter-spacing: -0.02em;
     margin-bottom: 2rem;
+    word-break: break-all;
 }
 
 .hero-lead {
@@ -157,7 +163,7 @@ body {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -225,6 +231,7 @@ body {
     font-size: 0.8rem;
     color: var(--accent);
     font-weight: 500;
+    word-break: break-all;
 }
 
 .work-date {
@@ -258,6 +265,7 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     transition: color 0.2s ease, opacity 0.2s ease;
+    word-break: break-all;
 }
 
 .work-link:hover {
@@ -298,6 +306,7 @@ body {
     font-weight: 600;
     border: 1px solid var(--border);
     transition: background-color 0.2s ease, border-color 0.2s ease;
+    word-break: break-all;
 }
 
 .github-btn:hover {
@@ -308,6 +317,7 @@ body {
 
 .github-icon {
     display: block;
+    flex-shrink: 0;
 }
 
 /* Footer */
@@ -323,13 +333,47 @@ body {
     letter-spacing: 1px;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive (768px以下) */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .header-inner {
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    .hero-section {
+        padding: 11rem 0 5rem;
+    }
+
+    .section {
+        padding: 5rem 0;
+    }
+
     .work-item {
         grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 1.5rem;
     }
-    .hero-section {
-        padding: 10rem 0 5rem;
+
+    .contact-box {
+        padding: 2rem 1.5rem;
     }
 }
