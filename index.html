@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Settings -->
     <title>高窪真拓 | Portfolio - Project Management & Engineering</title>
+    <meta name="description" content="さいたまIT・web専門学校 高度専門士情報技術科の高窪真拓のポートフォリオ。プロジェクトマネジメント手法と小型ドローンの企画提案を掲載。">
+    <link rel="canonical" href="https://nyan48310-code.github.io/">
+
+    <!-- OGP Settings -->
+    <meta property="og:title" content="高窪真拓 | Portfolio - Project Management & Engineering">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nyan48310-code.github.io/">
+    <meta property="og:image" content="https://nyan48310-code.github.io/ogp-image.png">
+
+    <!-- Google Analytics (GA4) ★ここを自分のG-から始まるIDに書き換える -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J8ZG40KM7E');
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,24 +46,37 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
-            <div class="hero-badge">PROJECT MANAGEMENT & LOGICAL LEADERSHIP</div>
-            <h1 class="hero-title">
-                混沌とした課題をロジカルに紐解き、<br>
-                チームを確実なゴールへと導く。
-            </h1>
-            <p class="hero-lead">
-                SIW 高度専門士情報技術科でシステム開発とプロジェクトマネジメントを専攻する高窪真拓のポートフォリオ。<br>
-                技術的なエラーやチーム内の仕様迷走に対し、冷静な原因分析と明快な言語化で円滑な合意形成を実現します。
-            </p>
-            <div class="hero-actions">
-                <a href="#works" class="btn-primary">VIEW PROJECTS <span>↓</span></a>
-                <a href="#contact" class="btn-secondary">CONTACT ME</a>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">PROJECT MANAGEMENT & SYSTEM DEVELOPMENT</div>
+                <h1 class="hero-title">
+                    構造化されたロジックで、<br>
+                    複雑なプロジェクトを最適化する。
+                </h1>
+                <p class="hero-lead">
+                    さいたまIT・web専門学校 高度専門士情報技術科（PM専攻）。<br>
+                    システム開発の実装力と、WBS・リスク管理をはじめとする実践的なプロジェクトマネジメントを融合させ、チームを確実な成果へと導きます。
+                </p>
+                <div class="hero-actions">
+                    <a href="#works" class="btn-primary">VIEW PROJECTS <span>↓</span></a>
+                    <a href="#contact" class="btn-secondary">CONTACT</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="visual-badge">PM & Engineering</div>
+                    <p class="visual-text">“ 計画の緻密さと、現場での柔軟な課題解決力。”</p>
+                    <div class="visual-footer">
+                        <span>Takakubo Masahiro</span>
+                        <span class="dot">●</span>
+                        <span>SIW 3rd Year</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section（自己紹介） -->
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
@@ -53,16 +86,16 @@
             <div class="about-grid">
                 <div class="about-card main-profile">
                     <h3 class="profile-name">高窪 真拓 <span class="en-name">Takakubo Masahiro</span></h3>
-                    <p class="profile-affiliation">SIW さいたまIT・web専門学校 高度専門士情報技術科（学籍番号: 24010020）</p>
+                    <p class="profile-affiliation">さいたまIT・web専門学校 高度専門士情報技術科 3年（PM専攻）</p>
                     <p class="profile-desc">
-                        情報技術の実践的な開発と、プロジェクトマネジメント（WBS、リスク管理、合意形成手法）を横断的に学習。
-                        グループ演習や開発プロジェクトでは、単にコードを書くだけでなく、「何が課題で、どういうステップで解決すべきか」を構造化する役割を担っています。意見が割れたり仕様が迷走した際にも、客観的なファクトとロジックに基づいたファシリテーションでチームの舵取りを行います。
+                        システム開発とプロジェクトマネジメントを横断して学習。チーム演習や開発プロジェクトでは、単なるコーディングに留まらず、WBSの構築、予実管理、ボトルネックの早期発見といったマネジメントの要を担っています。
+                        予期せぬ仕様変更やスケジュール遅延が発生した際にも、感情的にならずファクトベースで課題を切り分け、迅速なリカバリー策を立案・実行する推進力を持っています。
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-box">
                         <span class="stat-num">PM</span>
-                        <span class="stat-label">Project Management Methodologies</span>
+                        <span class="stat-label">Project Management & WBS</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-num">Logic</span>
@@ -73,7 +106,7 @@
         </div>
     </section>
 
-    <!-- Strengths Section（PMに関するスキル・強み） -->
+    <!-- Strengths Section -->
     <section id="skills" class="section">
         <div class="container">
             <div class="section-header">
@@ -83,24 +116,24 @@
             <div class="skills-grid">
                 <div class="skill-card">
                     <span class="skill-no">01</span>
-                    <h3>チームを牽引する推進力</h3>
-                    <p>プロジェクトにおけるタスクの優先順位を明確化し、ボトルネックを早期に解消。メンバー全員が迷うことなく同じ方向へ進めるよう、的確なロードマップを提示して進行をリードします。</p>
+                    <h3>推進力とロードマップの提示</h3>
+                    <p>混沌としたプロジェクト初期やタスクが山積した状況下でも、優先順位を明確に整理。メンバーが迷わず動ける具体的な道筋を示し、ゴールへ牽引します。</p>
                 </div>
                 <div class="skill-card">
                     <span class="skill-no">02</span>
                     <h3>冷静な問題の切り分け力</h3>
-                    <p>不具合やスケジュール遅延といった予期せぬトラブルに対し、感情的にならず原因をロジカルに分解。事実ベースで構造を把握し、最短で確実なリカバリー策を導き出します。</p>
+                    <p>不具合やスケジュール遅延に対し、原因をロジカルに分解。何がボトルネックになっているかを正確に突き止め、最短のリカバリー策を実行します。</p>
                 </div>
                 <div class="skill-card">
                     <span class="skill-no">03</span>
                     <h3>明確な言語化と合意形成</h3>
-                    <p>複雑な技術仕様や曖昧なアイデアを、誰にでも直感的に伝わる言葉や資料に変換。ステークホルダーやチームメンバー間の認識のズレを防ぎ、円滑な合意形成を徹底します。</p>
+                    <p>複雑な技術仕様や曖昧な要件を分かりやすく言語化し、ステークホルダー間の認識のズレを解消。円滑なコミュニケーションで合意形成を図ります。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Works Section（企画書スライド 1点のみ） -->
+    <!-- Works Section -->
     <section id="works" class="section">
         <div class="container">
             <div class="section-header">
@@ -111,19 +144,19 @@
                 
                 <article class="work-item">
                     <div class="work-meta">
-                        <span class="work-category">Project Proposal & Presentation</span>
-                        <span class="work-date">企画提案 / 2026</span>
+                        <span class="work-category">Project Proposal & Design</span>
+                        <span class="work-date">2026</span>
                     </div>
                     <div class="work-content">
                         <h3>小型ドローンの社会運用についての企画提案</h3>
                         <p>
-                            社会的課題の抽出からターゲット層の設定、具体的な解決アプローチ、実現に向けたリスク管理・ロードマップまでを一貫して構造化した自作の企画書スライドです。プロジェクトマネジメントの観点を取り入れ、社会的実装における実効性と論理性を徹底的に追求しました。
+                            社会的課題の抽出からターゲット設定、具体的な解決アプローチ、リスク管理・ロードマップまでを一貫して構造化した企画提案スライド。プロジェクトマネジメントの観点を取り入れ、実効性と論理性を徹底的に追求しました。
                         </p>
                         <div class="work-tech-tags">
                             <span>企画立案</span>
                             <span>課題構造化</span>
-                            <span>スライドデザイン</span>
                             <span>ロジック構築</span>
+                            <span>Canva</span>
                         </div>
                         <div class="work-action">
                             <a href="https://canva.link/soqj72ia4og4cft" target="_blank" rel="noopener" class="work-link">VIEW SLIDES (Canva) ↗</a>
@@ -144,7 +177,7 @@
             </div>
             <div class="contact-box">
                 <h3>Get in Touch</h3>
-                <p>掲載している企画書、プロジェクト管理手法、または開発に関するお問い合わせや詳細のご確認は、以下のGitHubプロフィールよりお願いいたします。</p>
+                <p>プロジェクト管理手法、企画提案、および開発に関するお問い合わせや詳細のご確認は、以下のGitHubプロフィールよりお願いいたします。</p>
                 <div class="contact-links">
                     <a href="https://github.com/nyan48310-code" target="_blank" rel="noopener" class="github-btn">
                         <svg class="github-icon" viewBox="0 0 24 24" width="20" height="20">
